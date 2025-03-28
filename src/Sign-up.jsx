@@ -214,7 +214,7 @@ const SignUpPage = () => {
 
         <div className="signin-link">
           <p>
-            Already have an account? <a href="/login">Log in</a>
+            Already have an account? <a href="https://sumbook-front.vercel.app/login">Log in</a>
           </p>
         </div>
       </form>
