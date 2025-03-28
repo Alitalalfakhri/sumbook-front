@@ -1,0 +1,113 @@
+/* Container for the entire page to allow vertical centering */
+body{
+  background-color:#f3f4f6;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures the page takes up the full height */
+  background-color: #f3f4f6; /* Light background color for the page */
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top:120px;
+}
+
+/* Header section with the image and title */
+.details-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details-head .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.details-head .image img {
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.details-head .titel {
+  background-color: #eeecec;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.details-head .titel h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* The description box styling */
+.description-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Makes the box take up 80% of the width */
+  max-width: 800px; /* Ensures it doesn’t get too wide */
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff; /* White background for the description box */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+.description-box .description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/* Styling for the price and rating section */
+.price-rating {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #f3f4f6;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+}
+
+/* Styling for the back-home button */
+.back-home-button {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  background-color: #ff7f11;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(255, 127, 17, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.back-home-button:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+.back-home-button:active {
+  background-color: #a25715; /* Darker orange when clicked */
+}
+

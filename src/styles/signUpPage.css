@@ -1,0 +1,117 @@
+/* Styling for the sign-up container elements */
+.signupPage{
+  display:flex;
+  justify-content:center;
+  align-content:center
+}
+.signup-container {
+  max-width: 400px;
+  width: 100%; 
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the title and form elements */
+}
+
+.signup-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: block; /* Ensures label takes up full width */
+}
+
+.input-group input {
+  padding: 12px;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #ff7f11;
+}
+
+.signup-btn,
+.google-btn {
+  padding: 12px;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn {
+  background-color: #ff7f11;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #0056b3;
+}
+
+.google-btn {
+  background-color: #db4437;
+  color: white;
+}
+
+.google-btn:hover {
+  background-color: #c1351d;
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signin-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 15px;
+  }
+
+  .signup-title {
+    font-size: 1.25rem;
+  }
+
+  .signup-btn,
+  .google-btn {
+    font-size: 0.9rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+  }
+}
+

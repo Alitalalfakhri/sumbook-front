@@ -1,0 +1,28 @@
+.books-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-column-gap:5px;
+  grid-row-gap:10px;
+}
+
+.book-card-result{
+  
+  width:150px;
+  padding:20px;
+  border :1px solid black;
+  background-color:#f4a79a;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.bookImage{
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  
+  img{
+   width:120px;
+    height:200px;
+  }
+}
+

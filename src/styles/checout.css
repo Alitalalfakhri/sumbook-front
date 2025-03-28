@@ -1,0 +1,93 @@
+.checkout-page {
+  margin-top: 60px; /* Push content down to avoid overlap with header */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  margin-top:30px;
+}
+
+.checkout-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.checkout-empty {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.checkout-empty h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.cart-item h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.cart-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.delete-button {
+  background-color: #ff4c4c; /* Red for delete button */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #e63946;
+}
+
+.checkout-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkout-footer .button {
+  width: 48%;
+}
+
+.checkout-page .button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff7f11; /* Orange color */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(255, 127, 17, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s;
+  outline: none;
+}
+
+.checkout-page .button:hover {
+  transform: translateY(-5px);
+}

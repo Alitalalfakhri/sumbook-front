@@ -1,0 +1,130 @@
+/* Overall container for the order page */
+.order-container {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title */
+.order-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.order-table th {
+  background-color: #ff7f11; /* Bright orange color for headers */
+  color: white;
+  font-weight: bold;
+}
+
+.order-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+.order-table tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.order-table td {
+  color: #555;
+}
+
+.order-table td:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Total bill container */
+.total-bill {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.total-bill h3 {
+  color: #ff7f11; /* Orange color for the total */
+}
+
+.send-button{
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff7f11; /* Orange color */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(255, 127, 17, 0.4); /* Floating shadow effect */
+  cursor: pointer;
+  transition: transform 0.3s;
+  outline: none;
+}
+.back-home{
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #a6a09b; /* Orange color */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgb(0, 0, 0, 0.4); /* Floating shadow effect */
+  cursor: pointer;
+  transition: transform 0.3s;
+  outline: none;
+}
+
+/* Styles for the address form inputs */
+.address-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.address-form input:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight color when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+.address-form input::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+/* Optional: Add styles for invalid inputs (if using HTML5 validation) */
+.address-form input:invalid {
+  border-color: #ff4444; /* Red border for invalid inputs */
+}
+
+.address-form input:invalid:focus {
+  box-shadow: 0 0 5px rgba(255, 68, 68, 0.5); /* Red glow for invalid focused inputs */
+}
