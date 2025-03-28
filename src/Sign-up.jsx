@@ -12,7 +12,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyDh1UQ92aWOpYJsCTaYEn66J7V9Pdqvfd4",
   authDomain: "sumbook-ali.firebaseapp.com",
   projectId: "sumbook-ali",
-  storageBucket: "sumbook-ali.appspot.com",
+  storageBucket: "sumbook-ali.firebasestorage.app",
   messagingSenderId: "255469526663",
   appId: "1:255469526663:web:60650ecfe8a63c592b2222",
   measurementId: "G-5PDNMHYS02",
@@ -23,7 +23,12 @@ const auth = getAuth();
 auth.useDeviceLanguage();
 const provider = new GoogleAuthProvider();
 
+
+
+
+
 axios.defaults.withCredentials = true;
+
 
 const SignUpPage = () => {
   console.log(JSON.parse(localStorage.getItem("user")))
@@ -154,6 +159,10 @@ const SignUpPage = () => {
     }
   };
 
+  
+  
+
+
   return (
     <div className="signupPage">
     <div className="signup-container">
@@ -206,20 +215,16 @@ const SignUpPage = () => {
         <div className="signin-link">
   <p>
     Already have an account?{" "}
-    <button 
-      onClick={() => navigate('/login')}  // ✅ Fixed syntax
-      style={{
-        background: 'none',
-        border: 'none',
-        color: 'blue',
-        cursor: 'pointer',
-        padding: 0,
-        textDecoration: 'underline',
-        font: 'inherit' // Maintains parent font style
+    <a
+      href="/login"
+      onClick={(e) => {
+        e.preventDefault();
+        navigate('/login');
       }}
+      style={{ cursor: 'pointer' }}
     >
       Log in
-    </button>
+    </a>
   </p>
 </div>
       </form>
@@ -230,6 +235,7 @@ const SignUpPage = () => {
       
     </div>
     </div>
+    
   );
 };
 
