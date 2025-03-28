@@ -204,12 +204,24 @@ const SignUpPage = () => {
        
 
         <div className="signin-link">
-          <p>
-            Already have an account? <button onClick = () => {
-              navigate('/login')
-            }>Log in</button>
-          </p>
-        </div>
+  <p>
+    Already have an account?{" "}
+    <button 
+      onClick={() => navigate('/login')}  // ✅ Fixed syntax
+      style={{
+        background: 'none',
+        border: 'none',
+        color: 'blue',
+        cursor: 'pointer',
+        padding: 0,
+        textDecoration: 'underline',
+        font: 'inherit' // Maintains parent font style
+      }}
+    >
+      Log in
+    </button>
+  </p>
+</div>
       </form>
      
 
